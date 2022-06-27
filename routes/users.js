@@ -120,7 +120,7 @@ router.post('/ngo/login', passport.authenticate('local', { failureFlash: true, f
 router.get('/logout', (req, res) => {
     req.logout();
     req.flash('success', 'Goodbye!');
-    res.redirect('/home');
+    res.redirect('/');
 })
 
 module.exports = router;
