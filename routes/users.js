@@ -6,6 +6,10 @@ const User = require('../models/user');
 const Volunteer = require('../models/volunteer');
 const Ngo = require('../models/ngo');
 
+app.get('/', (req, res) => {
+    res.render('home')
+})
+
 router.get('/register', (req, res) => {
     res.render('users/register');
 })

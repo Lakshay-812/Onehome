@@ -71,9 +71,7 @@ app.use('/volunteer', volunteerRoutes);
 app.use('/ngo', ngoRoutes);
 app.use('/opportunity', opportunityRoutes);
 
-app.get('/home', (req, res) => {
-    res.render('home')
-})
+
 
 // app.all('*', (req, res, next) => {
 //     next(new ExpressError('Page not Found', 404))
